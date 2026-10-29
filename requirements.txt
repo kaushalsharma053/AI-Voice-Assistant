@@ -1,0 +1,17 @@
+# Saarthi AI - Dependencies
+# Tested on Python 3.13 / 3.12 / 3.11 on Windows
+
+tensorflow>=2.16.0
+keras>=3.0.0
+numpy>=1.26.0
+scikit-learn>=1.4.0
+matplotlib>=3.8.0
+customtkinter>=5.2.0
+pyttsx3>=2.90
+SpeechRecognition>=3.10.0
+pyaudio>=0.2.14
+pyautogui>=0.9.54
+psutil>=5.9.0
+requests>=2.31.0
+pillow>=10.0.0
+uvicorn>=0.30.0

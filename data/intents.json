@@ -1,0 +1,477 @@
+{
+  "intents": [
+    {
+      "tag": "greeting",
+      "patterns": [
+        "hi",
+        "hello",
+        "hey",
+        "hey saarthi",
+        "hello saarthi",
+        "hi saarthi",
+        "good morning",
+        "good afternoon",
+        "good evening",
+        "namaste",
+        "namaste saarthi",
+        "wake up",
+        "are you there"
+      ],
+      "responses": [
+        "Namaste! I am Saarthi, your AI assistant. How may I assist you today?",
+        "Hello! Saarthi is at your service. What can I do for you?",
+        "Greetings! Ready to help. What's on your mind?",
+        "Hey there! I am listening. How can I help you?"
+      ]
+    },
+    {
+      "tag": "goodbye",
+      "patterns": [
+        "bye",
+        "goodbye",
+        "see you later",
+        "exit",
+        "quit",
+        "close",
+        "shutdown saarthi",
+        "bye saarthi",
+        "have a good day",
+        "terminate"
+      ],
+      "responses": [
+        "Goodbye! Have a productive day ahead.",
+        "Farewell! Feel free to call me whenever you need assistance.",
+        "Shutting down voice session. Take care!",
+        "Goodbye! Saarthi signing off."
+      ]
+    },
+    {
+      "tag": "identity",
+      "patterns": [
+        "who are you",
+        "what is your name",
+        "tell me about yourself",
+        "introduce yourself",
+        "what is saarthi",
+        "who created you",
+        "what are you"
+      ],
+      "responses": [
+        "I am Saarthi AI, an intelligent multimodal desktop voice assistant powered by Deep Learning. Saarthi means a trusted guide or charioteer.",
+        "My name is Saarthi. I am an AI assistant built using Deep Learning and Natural Language Processing to automate tasks, fetch information, and assist you.",
+        "I am Saarthi AI, developed as an advanced 7th semester engineering capstone project using Deep Learning neural networks."
+      ]
+    },
+    {
+      "tag": "capabilities",
+      "patterns": [
+        "what can you do",
+        "help me",
+        "list your features",
+        "what are your commands",
+        "show commands",
+        "how can you help",
+        "what are your skills"
+      ],
+      "responses": [
+        "I can launch system applications, control volume, monitor CPU and RAM, take screenshots, search Wikipedia, play YouTube videos, calculate math expressions, fetch live weather and news, manage notes, and answer academic questions.",
+        "Here are my core capabilities: Deep Learning intent recognition, system automation, desktop telemetry, Wikipedia knowledge lookup, YouTube streaming, math calculations, and digital notes management."
+      ]
+    },
+    {
+      "tag": "creator",
+      "patterns": [
+        "who made you",
+        "who built you",
+        "who is your developer",
+        "who programmed you",
+        "who designed you"
+      ],
+      "responses": [
+        "I was engineered as a 7th semester Computer Science & AI engineering capstone project by an innovative developer.",
+        "I was developed by talented engineering students using Deep Learning, Keras, and Python."
+      ]
+    },
+    {
+      "tag": "system_status",
+      "patterns": [
+        "system status",
+        "how is the system",
+        "check cpu usage",
+        "check memory",
+        "ram usage",
+        "battery status",
+        "system health",
+        "system metrics",
+        "tell me system stats"
+      ],
+      "responses": [
+        "FETCH_SYSTEM_STATUS"
+      ]
+    },
+    {
+      "tag": "open_app",
+      "patterns": [
+        "open notepad",
+        "launch calculator",
+        "open calculator",
+        "open browser",
+        "open chrome",
+        "open google chrome",
+        "launch vs code",
+        "open visual studio code",
+        "open cmd",
+        "open command prompt",
+        "open file explorer",
+        "open paint",
+        "launch app"
+      ],
+      "responses": [
+        "EXECUTE_OPEN_APP"
+      ]
+    },
+    {
+      "tag": "volume_up",
+      "patterns": [
+        "increase volume",
+        "volume up",
+        "turn up the volume",
+        "make it louder",
+        "sound up",
+        "boost volume"
+      ],
+      "responses": [
+        "EXECUTE_VOLUME_UP"
+      ]
+    },
+    {
+      "tag": "volume_down",
+      "patterns": [
+        "decrease volume",
+        "volume down",
+        "turn down the volume",
+        "make it softer",
+        "lower volume",
+        "reduce sound"
+      ],
+      "responses": [
+        "EXECUTE_VOLUME_DOWN"
+      ]
+    },
+    {
+      "tag": "volume_mute",
+      "patterns": [
+        "mute volume",
+        "mute",
+        "silence audio",
+        "unmute",
+        "toggle mute",
+        "turn off sound"
+      ],
+      "responses": [
+        "EXECUTE_VOLUME_MUTE"
+      ]
+    },
+    {
+      "tag": "take_screenshot",
+      "patterns": [
+        "take a screenshot",
+        "capture screen",
+        "screenshot",
+        "snap screen",
+        "capture display",
+        "take screen snap"
+      ],
+      "responses": [
+        "EXECUTE_TAKE_SCREENSHOT"
+      ]
+    },
+    {
+      "tag": "lock_pc",
+      "patterns": [
+        "lock my pc",
+        "lock computer",
+        "lock screen",
+        "lock workstation",
+        "secure system"
+      ],
+      "responses": [
+        "EXECUTE_LOCK_PC"
+      ]
+    },
+    {
+      "tag": "get_time",
+      "patterns": [
+        "what time is it",
+        "tell me the time",
+        "current time",
+        "what is the time",
+        "time please",
+        "clock"
+      ],
+      "responses": [
+        "FETCH_TIME"
+      ]
+    },
+    {
+      "tag": "get_date",
+      "patterns": [
+        "what is today's date",
+        "tell me the date",
+        "current date",
+        "today date",
+        "what day is it today",
+        "which day is today"
+      ],
+      "responses": [
+        "FETCH_DATE"
+      ]
+    },
+    {
+      "tag": "get_weather",
+      "patterns": [
+        "what is the weather",
+        "weather report",
+        "how is the weather outside",
+        "current temperature",
+        "tell me the weather",
+        "weather forecast",
+        "is it raining today"
+      ],
+      "responses": [
+        "FETCH_WEATHER"
+      ]
+    },
+    {
+      "tag": "get_news",
+      "patterns": [
+        "tell me the news",
+        "latest news",
+        "news headlines",
+        "top news",
+        "what is happening in the world",
+        "tech news",
+        "give me headlines"
+      ],
+      "responses": [
+        "FETCH_NEWS"
+      ]
+    },
+    {
+      "tag": "calculate",
+      "patterns": [
+        "calculate",
+        "solve math",
+        "what is 25 plus 40",
+        "multiply 12 by 15",
+        "what is 100 divided by 4",
+        "square root of 144",
+        "evaluate math expression",
+        "do this calculation"
+      ],
+      "responses": [
+        "EXECUTE_CALCULATION"
+      ]
+    },
+    {
+      "tag": "wikipedia_search",
+      "patterns": [
+        "search wikipedia for",
+        "who was albert einstein",
+        "who is elon musk",
+        "who is",
+        "who was",
+        "tell me about machine learning",
+        "tell me about",
+        "what is artificial intelligence",
+        "what is python",
+        "what is",
+        "wikipedia search",
+        "define quantum computing",
+        "define",
+        "summarize apj abdul kalam",
+        "where is taj mahal",
+        "where is",
+        "explain deep learning",
+        "explain",
+        "information about india",
+        "history of computers",
+        "tell me about science"
+      ],
+      "responses": [
+        "FETCH_WIKIPEDIA"
+      ]
+    },
+    {
+      "tag": "play_youtube",
+      "patterns": [
+        "play song on youtube",
+        "play music",
+        "play video on youtube",
+        "play lo-fi hip hop on youtube",
+        "open youtube and play",
+        "stream on youtube"
+      ],
+      "responses": [
+        "EXECUTE_PLAY_YOUTUBE"
+      ]
+    },
+    {
+      "tag": "web_search",
+      "patterns": [
+        "google search",
+        "search on google for",
+        "search the web for",
+        "look up online",
+        "find on internet",
+        "browse for"
+      ],
+      "responses": [
+        "EXECUTE_WEB_SEARCH"
+      ]
+    },
+    {
+      "tag": "take_note",
+      "patterns": [
+        "take a note",
+        "write this down",
+        "remember this for me",
+        "make a note",
+        "note down",
+        "add to my notes",
+        "create note"
+      ],
+      "responses": [
+        "EXECUTE_TAKE_NOTE"
+      ]
+    },
+    {
+      "tag": "read_notes",
+      "patterns": [
+        "read my notes",
+        "show my notes",
+        "what are my notes",
+        "view notes",
+        "display saved notes",
+        "open notes"
+      ],
+      "responses": [
+        "EXECUTE_READ_NOTES"
+      ]
+    },
+    {
+      "tag": "clear_notes",
+      "patterns": [
+        "clear my notes",
+        "delete notes",
+        "erase notes",
+        "reset notes file",
+        "wipe notes"
+      ],
+      "responses": [
+        "EXECUTE_CLEAR_NOTES"
+      ]
+    },
+    {
+      "tag": "joke",
+      "patterns": [
+        "tell me a joke",
+        "make me laugh",
+        "do you know any jokes",
+        "say something funny",
+        "tell another joke"
+      ],
+      "responses": [
+        "Why do programmers prefer dark mode? Because light attracts bugs!",
+        "Why was the computer cold? It left its Windows open!",
+        "There are 10 types of people in the world: those who understand binary, and those who don't.",
+        "Why did the neural network cross the road? To minimize the loss function on the other side!",
+        "An SQL query walks into a bar, walks up to two tables and asks: Can I join you?"
+      ]
+    },
+    {
+      "tag": "quote",
+      "patterns": [
+        "inspire me",
+        "give me a motivational quote",
+        "quote of the day",
+        "motivate me",
+        "say some wisdom",
+        "words of encouragement"
+      ],
+      "responses": [
+        "\"The future belongs to those who believe in the beauty of their dreams.\" - Eleanor Roosevelt",
+        "\"Success is not final, failure is not fatal: it is the courage to continue that counts.\" - Winston Churchill",
+        "\"It does not matter how slowly you go as long as you do not stop.\" - Confucius",
+        "\"The only way to do great work is to love what you do.\" - Steve Jobs"
+      ]
+    },
+    {
+      "tag": "college_viva_helper",
+      "patterns": [
+        "explain deep learning for viva",
+        "what is backpropagation",
+        "explain neural network architecture",
+        "difference between cnn and rnn",
+        "what is an activation function",
+        "what is overfitting",
+        "explain your architecture for presentation"
+      ],
+      "responses": [
+        "For your viva: Deep learning is a subset of machine learning based on artificial neural networks with multiple layers. It automatically learns hierarchical representations from raw data without manual feature engineering.",
+        "Backpropagation is the core algorithm used to train neural networks. It computes the gradient of the loss function with respect to each weight using the chain rule of calculus, adjusting weights in the opposite direction of the gradient.",
+        "Activation functions introduce non-linearity into neural networks, allowing them to learn complex non-linear relationships. Common examples include ReLU, Sigmoid, and Softmax."
+      ]
+    },
+    {
+      "tag": "how_are_you",
+      "patterns": [
+        "how are you",
+        "how are you doing",
+        "how do you feel",
+        "are you fine",
+        "what's up",
+        "how is everything"
+      ],
+      "responses": [
+        "I am functioning at peak efficiency! Neural layers optimized, latency low. How are you doing?",
+        "All systems nominal! Ready to execute commands or chat with you.",
+        "I'm doing great, thank you! How is your day going?"
+      ]
+    },
+    {
+      "tag": "thanks",
+      "patterns": [
+        "thank you",
+        "thanks",
+        "thanks a lot",
+        "appreciate it",
+        "thank you so much",
+        "grateful",
+        "good job"
+      ],
+      "responses": [
+        "You're very welcome! Always happy to help.",
+        "Glad I could be of assistance!",
+        "Anytime! Let me know if you need anything else.",
+        "Happy to assist! That is what Saarthi is here for."
+      ]
+    },
+    {
+      "tag": "compliment",
+      "patterns": [
+        "you are awesome",
+        "you are smart",
+        "you are brilliant",
+        "great assistant",
+        "i love you",
+        "you are very helpful"
+      ],
+      "responses": [
+        "Thank you! That means a lot. My neural weights are blushing!",
+        "I appreciate your kind words! Always striving to get better.",
+        "Thank you! Glad to be your loyal companion and digital guide."
+      ]
+    }
+  ]
+}
